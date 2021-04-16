@@ -11,7 +11,6 @@
 
 .top-row{
     width: 100%;
-    border:1px solid green;
     height: 70px;
     display: flex;
     justify-content: flex-end;
@@ -22,8 +21,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    width: 200px;
+    width: 220px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,6 +48,8 @@ a:visited{
 
 svg{
     padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255,255,255);
     border-radius: 50%;
     margin-top: 5px;
     height: 35px;
@@ -66,6 +66,11 @@ svg:hover{
     opacity: 1;
     border: 1px solid rgb(231, 230, 230);
     background-color: rgb(231, 230, 230);
+}
+
+li > img{
+    margin-top: 5px;
+    border-radius: 50%;
 }
 
 
@@ -130,7 +135,7 @@ svg:hover{
 }
 
 .buttons>button:hover{
-    /* box-shadow: 0 0 11px rgba(33,33,33,.2);  */
+    cursor: pointer;
     border: 1px solid rgba(170, 164, 164,0.5);
     border-radius: 5px;
 }
