@@ -40,6 +40,7 @@ a{
 
 a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 a:visited{
@@ -58,6 +59,7 @@ svg{
 }
 
 svg:hover{
+    cursor: pointer;
     padding: 5px;
     border-radius: 50%;
     margin-top: 5px;
@@ -69,10 +71,15 @@ svg:hover{
 }
 
 li > img{
+    transition: box-shadow .1s;
     margin-top: 5px;
     border-radius: 50%;
 }
 
+li > img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
 
 
 .middle-row{
@@ -99,6 +106,10 @@ li > img{
     position: absolute;
     right: 20px;
     top: 35px;
+}
+
+.mic:hover{
+    cursor: pointer;
 }
 
 #searchbar{
